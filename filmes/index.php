@@ -4,7 +4,7 @@ include "banner.php";
 ?>
 <div class="container">
     <h2 class="display-5">Melhores avaliações</h2>
- 
+
     <div class="row">
         <div class="col-3">
             <img src="img/filme1.webp" class="img-fluid">
@@ -27,16 +27,26 @@ include "banner.php";
             <span>⭐ 10/10</span>
         </div>
     </div>
-    <div class="row">
-        <div class="col-8">
+    <div class="row mt-5">
+        <div class="col-6">
             <img src="img/banner.jpg" class="img-fluid">
         </div>
-        <div class="col-4">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus non velit officia, placeat illum beatae quia modi perspiciatis ex ratione! Modi nostrum enim perferendis nulla saepe veritatis nemo dolorem rerum!
-            <a href="https://youtube.com" class="btn btn-success btn-lg">ASSISTA AO TRAILER AGORA</a>
+        <div class="col-6 align-content-center">
+            <p class="fs-5 fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus non velit officia, placeat illum beatae quia modi perspiciatis ex ratione! Modi nostrum enim perferendis nulla saepe veritatis nemo dolorem rerum!
+                <a href="https://youtube.com" class="btn btn-success btn-lg">ASSISTA AO TRAILER AGORA</a>
             </p>
         </div>
- 
+
+    </div>
+    <div class="row mt-1">
+        <div class="col-6 align-content-center">
+            <p class="fs-5 fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus non velit officia, placeat illum beatae quia modi perspiciatis ex ratione! Modi nostrum enim perferendis nulla saepe veritatis nemo dolorem rerum!
+                <a href="https://youtube.com" class="btn btn-success btn-lg">ASSISTA AO TRAILER AGORA</a>
+            </p>
+        </div>
+        <div class="col-6">
+            <img src="img/banner.jpg" class="img-fluid">
+        </div>
     </div>
 </div>
-    <?php include "rodape.php"; ?>
+<?php include "rodape.php"; ?>
