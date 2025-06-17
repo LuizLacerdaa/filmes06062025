@@ -19,8 +19,29 @@ include "banner.php";
         if (!$conexao) {
             die("deu ruim" . mysqli_connect_error());
         }
+        /*Fim da conexão*/
 
-        echo "deu bom";
+        $sql = "select * from filmes";
+        $resultado = mysqli_query($conexao, $sql);
+
+        // echo "<pre>";
+        // print_r($resultado);
+        // exit();
+
+        while ($linha = mysqli_fetch_assoc($resultado)) {
+
+        ?>
+            <div class="col-3">
+
+                <img src=<?=$linha['imagem'];?> class="img-fluid">
+                <h3><?=$linha['titulo'];?></h3>
+                <span>⭐ <?=$linha['avaliacao'];?>/10</span>
+            </div>
+        <?php
+        }
+
+
+
         ?>
 
 
